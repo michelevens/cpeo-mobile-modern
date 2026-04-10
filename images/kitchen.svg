@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgK" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1a3055"/>
+    </linearGradient>
+    <linearGradient id="counterK" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a4a70"/>
+      <stop offset="100%" stop-color="#1a3660"/>
+    </linearGradient>
+    <linearGradient id="cabinetK" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3f6b"/>
+      <stop offset="100%" stop-color="#12203a"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgK)"/>
+  <!-- Floor -->
+  <rect x="0" y="430" width="800" height="170" fill="#0f172a" opacity="0.6"/>
+  <line x1="0" y1="430" x2="800" y2="430" stroke="#0ea5e9" stroke-width="1" opacity="0.12"/>
+  <!-- Floor tiles -->
+  <g stroke="#0ea5e9" stroke-width="0.3" opacity="0.05">
+    <line x1="0" y1="470" x2="800" y2="470"/>
+    <line x1="0" y1="510" x2="800" y2="510"/>
+    <line x1="0" y1="550" x2="800" y2="550"/>
+    <line x1="160" y1="430" x2="160" y2="600"/>
+    <line x1="320" y1="430" x2="320" y2="600"/>
+    <line x1="480" y1="430" x2="480" y2="600"/>
+    <line x1="640" y1="430" x2="640" y2="600"/>
+  </g>
+  <!-- Back wall -->
+  <rect x="0" y="60" width="800" height="370" fill="#12203a" opacity="0.3"/>
+  <!-- Upper cabinets -->
+  <rect x="50" y="80" width="140" height="100" rx="3" fill="url(#cabinetK)" stroke="#0ea5e9" stroke-width="0.5" opacity="0.5"/>
+  <rect x="55" y="85" width="60" height="90" rx="2" fill="#12203a" opacity="0.4" stroke="#0ea5e9" stroke-width="0.3" opacity="0.3"/>
+  <rect x="125" y="85" width="60" height="90" rx="2" fill="#12203a" opacity="0.4" stroke="#0ea5e9" stroke-width="0.3" opacity="0.3"/>
+  <!-- Cabinet handles -->
+  <rect x="108" y="120" width="3" height="20" rx="1" fill="#0ea5e9" opacity="0.3"/>
+  <rect x="132" y="120" width="3" height="20" rx="1" fill="#0ea5e9" opacity="0.3"/>
+  <!-- Upper cabinets right -->
+  <rect x="500" y="80" width="250" height="100" rx="3" fill="url(#cabinetK)" stroke="#0ea5e9" stroke-width="0.5" opacity="0.5"/>
+  <rect x="505" y="85" width="75" height="90" rx="2" fill="#12203a" opacity="0.4" stroke="#0ea5e9" stroke-width="0.3" opacity="0.3"/>
+  <rect x="590" y="85" width="75" height="90" rx="2" fill="#12203a" opacity="0.4" stroke="#0ea5e9" stroke-width="0.3" opacity="0.3"/>
+  <rect x="675" y="85" width="70" height="90" rx="2" fill="#12203a" opacity="0.4" stroke="#0ea5e9" stroke-width="0.3" opacity="0.3"/>
+  <!-- Backsplash area -->
+  <rect x="50" y="190" width="700" height="80" fill="#1a56db" opacity="0.06"/>
+  <!-- Tile pattern on backsplash -->
+  <g fill="#0ea5e9" opacity="0.04">
+    <rect x="55" y="195" width="40" height="30" rx="1"/>
+    <rect x="100" y="195" width="40" height="30" rx="1"/>
+    <rect x="145" y="195" width="40" height="30" rx="1"/>
+    <rect x="55" y="230" width="40" height="30" rx="1"/>
+    <rect x="100" y="230" width="40" height="30" rx="1"/>
+    <rect x="145" y="230" width="40" height="30" rx="1"/>
+    <rect x="505" y="195" width="40" height="30" rx="1"/>
+    <rect x="550" y="195" width="40" height="30" rx="1"/>
+    <rect x="595" y="195" width="40" height="30" rx="1"/>
+    <rect x="640" y="195" width="40" height="30" rx="1"/>
+    <rect x="685" y="195" width="40" height="30" rx="1"/>
+    <rect x="505" y="230" width="40" height="30" rx="1"/>
+    <rect x="550" y="230" width="40" height="30" rx="1"/>
+    <rect x="595" y="230" width="40" height="30" rx="1"/>
+    <rect x="640" y="230" width="40" height="30" rx="1"/>
+    <rect x="685" y="230" width="40" height="30" rx="1"/>
+  </g>
+  <!-- Counter -->
+  <rect x="50" y="270" width="700" height="15" rx="2" fill="url(#counterK)" stroke="#0ea5e9" stroke-width="0.8" opacity="0.7"/>
+  <!-- Lower cabinets -->
+  <rect x="50" y="285" width="180" height="145" rx="3" fill="url(#cabinetK)" stroke="#0ea5e9" stroke-width="0.5" opacity="0.4"/>
+  <line x1="140" y1="290" x2="140" y2="425" stroke="#0ea5e9" stroke-width="0.3" opacity="0.2"/>
+  <rect x="500" y="285" width="250" height="145" rx="3" fill="url(#cabinetK)" stroke="#0ea5e9" stroke-width="0.5" opacity="0.4"/>
+  <line x1="585" y1="290" x2="585" y2="425" stroke="#0ea5e9" stroke-width="0.3" opacity="0.2"/>
+  <line x1="665" y1="290" x2="665" y2="425" stroke="#0ea5e9" stroke-width="0.3" opacity="0.2"/>
+  <!-- Sink area -->
+  <rect x="280" y="275" width="100" height="8" rx="2" fill="#12203a" stroke="#0ea5e9" stroke-width="0.5" opacity="0.4"/>
+  <!-- Faucet -->
+  <rect x="328" y="245" width="4" height="30" fill="#0ea5e9" opacity="0.25" rx="1"/>
+  <rect x="320" y="242" width="20" height="6" rx="3" fill="#0ea5e9" opacity="0.2"/>
+  <!-- Coffee machine (on counter right) -->
+  <rect x="530" y="238" width="35" height="32" rx="3" fill="#12203a" stroke="#0ea5e9" stroke-width="0.8" opacity="0.5"/>
+  <rect x="535" y="243" width="12" height="12" rx="1" fill="#1a56db" opacity="0.2"/>
+  <circle cx="555" cy="252" r="4" fill="#0ea5e9" opacity="0.15"/>
+  <!-- Microwave -->
+  <rect x="620" y="230" width="60" height="40" rx="3" fill="#12203a" stroke="#0ea5e9" stroke-width="0.8" opacity="0.5"/>
+  <rect x="625" y="235" width="40" height="30" rx="2" fill="#0f172a" opacity="0.6"/>
+  <circle cx="673" cy="248" r="3" fill="#0ea5e9" opacity="0.2"/>
+  <!-- Refrigerator -->
+  <rect x="420" y="130" width="60" height="300" rx="4" fill="url(#cabinetK)" stroke="#0ea5e9" stroke-width="0.8" opacity="0.6"/>
+  <line x1="420" y1="260" x2="480" y2="260" stroke="#0ea5e9" stroke-width="0.5" opacity="0.2"/>
+  <rect x="472" y="180" width="3" height="30" rx="1" fill="#0ea5e9" opacity="0.25"/>
+  <rect x="472" y="290" width="3" height="30" rx="1" fill="#0ea5e9" opacity="0.25"/>
+  <!-- Breakfast bar / island table -->
+  <rect x="250" y="380" width="200" height="12" rx="3" fill="url(#counterK)" stroke="#0ea5e9" stroke-width="0.5" opacity="0.6"/>
+  <rect x="270" y="392" width="8" height="38" fill="#1a3055" rx="1"/>
+  <rect x="422" y="392" width="8" height="38" fill="#1a3055" rx="1"/>
+  <!-- Bar stools -->
+  <circle cx="300" cy="440" r="16" fill="#1a56db" opacity="0.15" stroke="#0ea5e9" stroke-width="0.5" opacity="0.2"/>
+  <line x1="300" y1="456" x2="300" y2="475" stroke="#1a3055" stroke-width="2"/>
+  <circle cx="400" cy="440" r="16" fill="#1a56db" opacity="0.15" stroke="#0ea5e9" stroke-width="0.5" opacity="0.2"/>
+  <line x1="400" y1="456" x2="400" y2="475" stroke="#1a3055" stroke-width="2"/>
+  <!-- Coffee cup on counter -->
+  <rect x="85" y="254" width="14" height="16" rx="2" fill="#1a56db" opacity="0.2" stroke="#0ea5e9" stroke-width="0.5" opacity="0.3"/>
+  <ellipse cx="92" cy="254" rx="8" ry="3" fill="#12203a" stroke="#0ea5e9" stroke-width="0.3" opacity="0.3"/>
+  <!-- Steam -->
+  <path d="M88,248 Q86,240 90,235" fill="none" stroke="#e8eefb" stroke-width="1" opacity="0.1"/>
+  <path d="M94,248 Q96,238 92,232" fill="none" stroke="#e8eefb" stroke-width="1" opacity="0.08"/>
+  <!-- Under-cabinet lights -->
+  <rect x="55" y="180" width="130" height="2" fill="#0ea5e9" opacity="0.15" rx="1"/>
+  <rect x="505" y="180" width="240" height="2" fill="#0ea5e9" opacity="0.15" rx="1"/>
+  <!-- Label -->
+  <text x="400" y="555" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#e8eefb" opacity="0.5" letter-spacing="6">KITCHEN / BREAK ROOM</text>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0ea5e9" opacity="0.35" letter-spacing="3">PLACEHOLDER IMAGE</text>
+</svg>
