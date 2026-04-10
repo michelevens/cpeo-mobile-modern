@@ -3,854 +3,465 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CPEO | Clermont Professional Executive Offices</title>
-  <meta name="description" content="Turnkey executive offices, virtual offices, meeting rooms, reception services, and professional business support in Clermont, Florida. Serving South Lake County since 2010.">
-  <!-- PWA Meta -->
+  <title>CPEO | Executive Office Space in Clermont, FL</title>
+  <meta name="description" content="Premium executive offices, virtual offices, and meeting rooms in Clermont, Florida. Move-in ready. No long-term lease required.">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1a56db">
+  <meta name="theme-color" content="#0a0a0a">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="CPEO">
   <link rel="apple-touch-icon" href="icons/icon-192.svg">
-  <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#" class="logo">
-        <span class="logo-icon">&#9670;</span> CPEO
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">CPEO</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#spaces">Spaces</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-right">
+        <a href="tel:3524045955" class="nav-phone">352-404-5955</a>
+        <a href="#contact" class="nav-cta">Book a Tour</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span>
       </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact" class="btn btn-nav">Contact Us</a></li>
-      </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#spaces">Spaces</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <div class="mobile-menu-footer">
+        <a href="tel:3524045955" class="btn btn-outline btn-full">Call 352-404-5955</a>
+        <a href="#contact" class="btn btn-primary btn-full">Book a Tour</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
   <header class="hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <span class="hero-badge">South Lake County, Florida</span>
-      <h1>Professional Image Needs,<br><span class="gradient-text">Executive Office Solutions</span></h1>
-      <p class="hero-subtitle">Turnkey work environments that offer an alternative to the traditional office. Fully fitted, furnished, and ready for immediate occupancy — at a fraction of the cost.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary btn-lg">Book A Room Now</a>
-        <a href="tel:3524045955" class="btn btn-outline btn-lg">Call 352-404-5955</a>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Spaces available in Clermont, FL
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">8+</span>
-          <span class="stat-label">Executive Offices</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">4</span>
-          <span class="stat-label">Conference Rooms</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">3</span>
-          <span class="stat-label">Virtual Office Plans</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">16</span>
-          <span class="stat-label">Max Room Capacity</span>
-        </div>
+      <h1>
+        Your office.<br>
+        <em>Ready today.</em>
+      </h1>
+      <p class="hero-sub">
+        Furnished executive offices, virtual addresses, and meeting rooms.
+        Move in tomorrow. No long-term lease. Starting at $99/mo.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary btn-lg">Schedule a tour</a>
+        <a href="#pricing" class="btn btn-ghost btn-lg">View pricing</a>
       </div>
+    </div>
+    <div class="hero-grid">
+      <div class="hero-card hc-1" style="background-image:url('images/office-1.svg')"></div>
+      <div class="hero-card hc-2" style="background-image:url('images/conference-room.svg')"></div>
+      <div class="hero-card hc-3" style="background-image:url('images/reception.svg')"></div>
     </div>
   </header>
 
-  <!-- Trust Bar -->
-  <section class="trust-bar">
+  <!-- Metrics -->
+  <section class="metrics">
+    <div class="metrics-inner">
+      <div class="metric">
+        <span class="metric-val">8+</span>
+        <span class="metric-label">Private offices</span>
+      </div>
+      <div class="metric">
+        <span class="metric-val">4</span>
+        <span class="metric-label">Conference rooms</span>
+      </div>
+      <div class="metric">
+        <span class="metric-val">16</span>
+        <span class="metric-label">Max capacity</span>
+      </div>
+      <div class="metric">
+        <span class="metric-val">30 min</span>
+        <span class="metric-label">From Orlando</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
     <div class="container">
-      <p class="trust-label">Trusted by professionals across South Lake County</p>
-      <div class="trust-logos">
-        <div class="trust-logo">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f3f4f6"/><path d="M10 20h20M20 10v20" stroke="#d1d5db" stroke-width="2"/></svg>
-          <span>Law Firms</span>
+      <div class="section-head">
+        <p class="label">Services</p>
+        <h2>Everything you need,<br><em>nothing you don't.</em></h2>
+        <p class="section-desc">Six solutions. One address. Zero hassle.</p>
+      </div>
+      <div class="services-grid">
+        <div class="svc">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Executive Offices</h3>
+          <p>Private, furnished offices with internet, reception, mail, kitchen, parking, and admin support included.</p>
         </div>
-        <div class="trust-logo">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f3f4f6"/><circle cx="20" cy="20" r="8" stroke="#d1d5db" stroke-width="2"/></svg>
-          <span>Consultants</span>
+        <div class="svc">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Virtual Offices</h3>
+          <p>Prestigious business address, mail forwarding, personalized call answering, and 24/7 voicemail. Three packages.</p>
         </div>
-        <div class="trust-logo">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f3f4f6"/><rect x="12" y="12" width="16" height="16" rx="2" stroke="#d1d5db" stroke-width="2"/></svg>
-          <span>Startups</span>
+        <div class="svc">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3>Reception Services</h3>
+          <p>Professional receptionists with your company profile, custom greetings, and calendar management.</p>
         </div>
-        <div class="trust-logo">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f3f4f6"/><path d="M12 28l8-16 8 16" stroke="#d1d5db" stroke-width="2"/></svg>
-          <span>Real Estate</span>
+        <div class="svc">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Meeting Rooms</h3>
+          <p>Boardrooms, day offices, and training rooms. AV equipment, video conferencing, up to 16 people. By the hour.</p>
         </div>
-        <div class="trust-logo">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f3f4f6"/><path d="M14 14l12 12M26 14l-12 12" stroke="#d1d5db" stroke-width="2"/></svg>
-          <span>Insurance</span>
+        <div class="svc">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+          </div>
+          <h3>Business Address &amp; Mail</h3>
+          <p>Registered CMRA. Mail receiving, forwarding, package handling via UPS, USPS, FedEx, and DHL.</p>
         </div>
-        <div class="trust-logo">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#f3f4f6"/><path d="M20 12v16M14 16l6-4 6 4" stroke="#d1d5db" stroke-width="2"/></svg>
-          <span>Media &amp; Tech</span>
+        <div class="svc">
+          <div class="svc-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Admin Support</h3>
+          <p>Secretarial, transcription, document prep, scheduling. Flexible, on-demand. No full-time hire required.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="services" id="services">
+  <!-- Pricing -->
+  <section class="section section-dark" id="pricing">
     <div class="container">
-      <span class="section-badge">What We Offer</span>
-      <h2 class="section-title">A Turn-Key Business Solution</h2>
-      <p class="section-subtitle">Whether you are just starting out or you are a small company looking to expand, we provide the best office solution for you with minimal cost.</p>
-
-      <!-- Executive Offices -->
-      <div class="service-detail" id="executive-offices">
-        <div class="service-detail-header">
-          <div class="service-icon-lg">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-          </div>
-          <div>
-            <h3>Executive Offices</h3>
-            <p class="service-tagline">Build Business Relationships with an Executive Office Suite</p>
-          </div>
-        </div>
-        <p>Our executive office packages provide private, furnished offices designed for professionals who need a dedicated workspace with all the amenities of a corporate setting.</p>
-        <div class="amenities-grid">
-          <h4>Executive Office Package Amenities</h4>
-          <div class="amenity-list">
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Private furnished office
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              High-speed internet access
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Full-time reception staff
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Administrative support
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Three conference rooms
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Prestigious mailing address
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Mail distribution
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Stocked kitchen
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Janitorial service
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Complimentary parking
-            </div>
-          </div>
-        </div>
-        <div class="additional-services">
-          <h4>Additional Services Available</h4>
-          <p>Phone answering services, voicemail, telephone assignment, secretarial support, fax/telex services, computer support, web design, video conferencing, accounting assistance, postal &amp; shipping (UPS, USPS, FedEx, DHL), photocopying, color scanning, and printer access.</p>
-        </div>
+      <div class="section-head section-head-light">
+        <p class="label">Pricing</p>
+        <h2>Simple, transparent<br><em>pricing.</em></h2>
+        <p class="section-desc">No hidden fees. No long-term commitments. Cancel anytime.</p>
       </div>
-
-      <!-- Virtual Offices -->
-      <div class="service-detail" id="virtual-offices">
-        <div class="service-detail-header">
-          <div class="service-icon-lg">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div>
-            <h3>Virtual Offices</h3>
-            <p class="service-tagline">A professional office setting appearance, without a full-time office</p>
-          </div>
-        </div>
-        <p>Enjoy all the benefits of having a fully-functioning office without moving from your present location. Our three virtual office packages are designed for businesses seeking a professional presence in Central Florida.</p>
-        <div class="amenities-grid">
-          <h4>Virtual Office Features</h4>
-          <div class="amenity-list">
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Prestigious Central Florida business address
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Mail collection &amp; forwarding
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Personalized call answering by receptionist
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Local telephone number
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Fax forwarding with local number
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Call redirecting
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              24/7 remote voicemail
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Lobby listing
-            </div>
-            <div class="amenity-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Access to offices &amp; conference rooms
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Reception Services -->
-      <div class="service-detail" id="reception-services">
-        <div class="service-detail-header">
-          <div class="service-icon-lg">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </div>
-          <div>
-            <h3>Reception Services</h3>
-            <p class="service-tagline">Front Desk &amp; Virtual Receptionist</p>
-          </div>
-        </div>
-        <p>Our experienced, professional receptionists are friendly and proactive, providing concierge-level services. They have instant access to your company profile and follow special instructions for greeting your visitors and clients. From calendar management to personalized call handling, our reception staff projects the polished image your business deserves.</p>
-      </div>
-
-      <!-- Mailing Address -->
-      <div class="service-detail" id="mailing-address">
-        <div class="service-detail-header">
-          <div class="service-icon-lg">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
-          </div>
-          <div>
-            <h3>Mailing Address &amp; Package Receiving</h3>
-            <p class="service-tagline">Commercial Mail Receiving Agency (CMRA)</p>
-          </div>
-        </div>
-        <p>As a registered Commercial Mail Receiving Agency (CMRA), CPEO accepts mail from the United States Postal Service for recipients, keeps it for collection, or re-mails it to your location with newly paid postage. We also serve as an Office Business Center (OBC) and Corporate Executive Center (CEC), providing secure mail and package handling alongside our full suite of office services.</p>
-      </div>
-
-      <!-- Conference Rooms -->
-      <div class="service-detail" id="conference-rooms">
-        <div class="service-detail-header">
-          <div class="service-icon-lg">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <div>
-            <h3>Conference &amp; Meeting Rooms</h3>
-            <p class="service-tagline">Boardrooms, Day Offices &amp; Training Rooms</p>
-          </div>
-        </div>
-        <p>Our facility features three state-of-the-art conference boardrooms with catering services available and kitchen access for meals and seminars. Meeting and training rooms provide free high-speed internet, free local and long-distance phone calls, advanced presentation equipment and supplies, along with business catering options. Spaces accommodate groups up to 16 persons.</p>
-        <div class="room-types-grid">
-          <div class="room-type">
-            <h5>Boardrooms</h5>
-            <p>State-of-the-art AV, catering available</p>
-          </div>
-          <div class="room-type">
-            <h5>Day Offices</h5>
-            <p>Private workspace by the hour or day</p>
-          </div>
-          <div class="room-type">
-            <h5>Training Rooms</h5>
-            <p>Presentation equipment &amp; group seating</p>
-          </div>
-          <div class="room-type">
-            <h5>Meeting Rooms</h5>
-            <p>Video conferencing &amp; collaboration tools</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Additional Services -->
-      <div class="service-detail" id="additional-services">
-        <div class="service-detail-header">
-          <div class="service-icon-lg">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </div>
-          <div>
-            <h3>Secretarial &amp; Administrative Support</h3>
-            <p class="service-tagline">Transcription, Dictation &amp; Office Management</p>
-          </div>
-        </div>
-        <p>Our administrative and secretarial support staff are trained in presentations and business communications. Services are offered on flexible, as-needed bases — from document preparation and scheduling to transcription and dictation services. Get professional support without the cost of full-time hires.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Facilities Section -->
-  <section class="facilities" id="facilities">
-    <div class="container">
-      <span class="section-badge">Our Facilities</span>
-      <h2 class="section-title">Designed for Productivity</h2>
-      <p class="section-subtitle">Four conference rooms, eight executive offices, and a warm reception area — all with free Wi-Fi, conveniently located among the rolling hills of Clermont, just an hour from Tampa and 30 minutes from Orlando.</p>
-      <div class="spaces-grid">
-        <div class="space-card space-card-large">
-          <div class="space-card-content">
-            <h3>Private Executive Offices</h3>
-            <p>Eight fully furnished, lockable offices ready for immediate occupancy. Each includes high-speed internet, utilities, and access to all common areas and amenities.</p>
-          </div>
-        </div>
-        <div class="space-card">
-          <div class="space-card-content">
-            <h3>Conference Boardrooms</h3>
-            <p>Three state-of-the-art boardrooms with AV systems, video conferencing, and catering services. Accommodates up to 16 people.</p>
-          </div>
-        </div>
-        <div class="space-card">
-          <div class="space-card-content">
-            <h3>Warm Reception &amp; Kitchen</h3>
-            <p>Professional lobby with full-time reception staff, well-appointed lobby area, and a fully-equipped stocked kitchen for your team.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section class="pricing" id="pricing">
-    <div class="container">
-      <span class="section-badge">Transparent Pricing</span>
-      <h2 class="section-title">Plans for Every Business</h2>
-      <p class="section-subtitle">Flexible options with no hidden fees. All plans include access to common areas, Wi-Fi, and complimentary parking.</p>
       <div class="pricing-grid">
-        <div class="pricing-card">
-          <div class="pricing-header">
+        <div class="price-card">
+          <div class="price-card-head">
             <h3>Virtual Office</h3>
-            <p class="pricing-desc">Professional presence without the full-time office</p>
+            <p>Professional presence,<br>work from anywhere</p>
           </div>
-          <div class="pricing-price">
-            <span class="price-from">From</span>
-            <span class="price-amount">$99</span>
-            <span class="price-period">/month</span>
+          <div class="price-amount">
+            <span class="currency">$</span><span class="value">99</span><span class="period">/mo</span>
           </div>
-          <ul class="pricing-features">
-            <li>Prestigious Clermont business address</li>
+          <ul class="price-list">
+            <li>Clermont business address</li>
             <li>Mail collection &amp; forwarding</li>
-            <li>Lobby listing</li>
             <li>24/7 remote voicemail</li>
-            <li>Conference room access (hourly)</li>
+            <li>Lobby directory listing</li>
+            <li>Meeting room access (hourly)</li>
           </ul>
-          <a href="#contact" class="btn btn-outline-dark btn-full">Get Started</a>
+          <a href="#contact" class="btn btn-outline btn-full">Get started</a>
         </div>
-        <div class="pricing-card pricing-featured">
-          <div class="pricing-badge">Most Popular</div>
-          <div class="pricing-header">
+        <div class="price-card price-card-featured">
+          <div class="price-card-badge">Popular</div>
+          <div class="price-card-head">
             <h3>Executive Office</h3>
-            <p class="pricing-desc">Your own private, furnished office suite</p>
+            <p>Your own private,<br>fully furnished office</p>
           </div>
-          <div class="pricing-price">
-            <span class="price-from">From</span>
-            <span class="price-amount">$499</span>
-            <span class="price-period">/month</span>
+          <div class="price-amount">
+            <span class="currency">$</span><span class="value">499</span><span class="period">/mo</span>
           </div>
-          <ul class="pricing-features">
+          <ul class="price-list">
             <li>Private furnished office</li>
-            <li>Full-time reception &amp; phone answering</li>
-            <li>High-speed internet included</li>
+            <li>Reception &amp; phone answering</li>
+            <li>High-speed internet</li>
             <li>Mail &amp; package handling</li>
-            <li>Conference room access included</li>
-            <li>Administrative support</li>
-            <li>Stocked kitchen &amp; janitorial</li>
+            <li>Conference room access</li>
+            <li>Admin support</li>
+            <li>Kitchen &amp; parking</li>
           </ul>
-          <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+          <a href="#contact" class="btn btn-primary btn-full">Get started</a>
         </div>
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3>Meeting Rooms</h3>
-            <p class="pricing-desc">On-demand conference &amp; training spaces</p>
+        <div class="price-card">
+          <div class="price-card-head">
+            <h3>Meeting Room</h3>
+            <p>On-demand space<br>for any occasion</p>
           </div>
-          <div class="pricing-price">
-            <span class="price-from">From</span>
-            <span class="price-amount">$35</span>
-            <span class="price-period">/hour</span>
+          <div class="price-amount">
+            <span class="currency">$</span><span class="value">35</span><span class="period">/hr</span>
           </div>
-          <ul class="pricing-features">
-            <li>Boardrooms up to 16 people</li>
-            <li>AV &amp; presentation equipment</li>
-            <li>Video conferencing setup</li>
-            <li>Free Wi-Fi &amp; local calls</li>
+          <ul class="price-list">
+            <li>Seats up to 16 people</li>
+            <li>AV &amp; presentation tools</li>
+            <li>Video conferencing</li>
+            <li>Free Wi-Fi &amp; calls</li>
             <li>Catering available</li>
           </ul>
-          <a href="#contact" class="btn btn-outline-dark btn-full">Book Now</a>
+          <a href="#contact" class="btn btn-outline btn-full">Book now</a>
         </div>
       </div>
-      <p class="pricing-note">Pricing varies based on office size and package selection. Contact us for a personalized quote tailored to your needs.</p>
+      <p class="pricing-footnote">All prices are starting rates. Contact us for a custom quote.</p>
     </div>
   </section>
 
-  <!-- Photo Gallery -->
-  <section class="gallery" id="gallery">
+  <!-- Spaces Gallery -->
+  <section class="section" id="spaces">
     <div class="container">
-      <span class="section-badge">Take a Look</span>
-      <h2 class="section-title">Our Spaces in Detail</h2>
-      <p class="section-subtitle">Explore our professional work environments designed to make a great impression on clients and help you do your best work.</p>
-      <div class="gallery-grid">
-        <div class="gallery-item gallery-item-wide">
-          <div class="gallery-placeholder" style="background-image: url('images/office-1.svg');">
-            <span>Executive Office Suite</span>
-            <small>Fully furnished private offices with natural light</small>
+      <div class="section-head">
+        <p class="label">Spaces</p>
+        <h2>See where you'll<br><em>do your best work.</em></h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item gi-lg" style="background-image:url('images/office-1.svg')">
+          <div class="gallery-caption">
+            <strong>Private Offices</strong>
+            <span>8 furnished suites</span>
           </div>
         </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder" style="background-image: url('images/conference-room.svg');">
-            <span>Conference Boardroom</span>
-            <small>State-of-the-art AV &amp; video conferencing</small>
+        <div class="gallery-item" style="background-image:url('images/conference-room.svg')">
+          <div class="gallery-caption">
+            <strong>Boardrooms</strong>
+            <span>Up to 16 seats</span>
           </div>
         </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder" style="background-image: url('images/reception.svg');">
-            <span>Warm Reception Area</span>
-            <small>Professional lobby with full-time staff</small>
+        <div class="gallery-item" style="background-image:url('images/reception.svg')">
+          <div class="gallery-caption">
+            <strong>Reception</strong>
+            <span>Full-time staff</span>
           </div>
         </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder" style="background-image: url('images/virtual-office.svg');">
-            <span>Virtual Office Solutions</span>
-            <small>Professional presence without a full-time office</small>
+        <div class="gallery-item" style="background-image:url('images/kitchen.svg')">
+          <div class="gallery-caption">
+            <strong>Kitchen</strong>
+            <span>Fully stocked</span>
           </div>
         </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder" style="background-image: url('images/kitchen.svg');">
-            <span>Stocked Kitchen</span>
-            <small>Fully equipped break room for your team</small>
-          </div>
-        </div>
-        <div class="gallery-item gallery-item-wide">
-          <div class="gallery-placeholder" style="background-image: url('images/building.svg');">
-            <span>Our Building &amp; Location</span>
-            <small>1230 Oakley Seaver Drive, Clermont — among the rolling hills, 30 min from Orlando</small>
+        <div class="gallery-item gi-lg" style="background-image:url('images/building.svg')">
+          <div class="gallery-caption">
+            <strong>Our Building</strong>
+            <span>1230 Oakley Seaver Dr, Clermont</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Schedule Tour CTA -->
-  <section class="tour-cta">
-    <div class="container tour-cta-content">
-      <div class="tour-cta-text">
-        <h2>See It For Yourself</h2>
-        <p>Schedule a free tour of our facilities. Walk through our offices, conference rooms, and common areas — and discover why professionals across South Lake County choose CPEO.</p>
-      </div>
-      <div class="tour-cta-actions">
-        <a href="tel:3524045955" class="btn btn-primary btn-lg">Schedule a Tour</a>
-        <div class="tour-cta-note">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          <span>Tours available Mon&ndash;Fri, 9AM&ndash;5PM</span>
+  <!-- Testimonial -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="testimonial-block">
+        <blockquote>
+          &ldquo;CPEO has helped me grow my business in a short amount of time. Thank you to Scott and all the staff for helping me create a more prestigious image for my company.&rdquo;
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MJ</div>
+          <div>
+            <strong>Mikel Jorgensen</strong>
+            <span>Chess Club Media, LLC</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="container about-grid">
-      <div class="about-content">
-        <span class="section-badge">About CPEO</span>
-        <h2 class="section-title">Concierge Level<br>of Services</h2>
-        <p>Clermont Professional Executive Offices was established to meet South Lake County's need for affordable professional office space. We deliver a concierge level of services to ensure our facilities and support services achieve world-class standards.</p>
-        <p>Our well-appointed lobby area, fully-equipped kitchen, and state-of-the-art boardrooms create an environment where businesses thrive. From training rooms to individual offices to full suites — all integrated with modern technology.</p>
-        <p>We provide state-of-the-art equipment and technologies with administrative support staff, giving you access to modern systems at a fraction of the cost of buying and maintaining equipment of your own.</p>
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-text">
+          <p class="label">About</p>
+          <h2>Built for South Lake County's<br><em>working professionals.</em></h2>
+          <p>CPEO was established to provide affordable, world-class office space to South Lake County. We deliver a concierge level of service &mdash; from state-of-the-art equipment to trained administrative staff &mdash; so you can focus entirely on your business.</p>
+          <p>Located among the rolling hills of Clermont, just 30 minutes from Orlando and one hour from Tampa, with complimentary parking and flexible terms that scale with you.</p>
+        </div>
         <div class="about-features">
-          <div class="about-feature">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Fully furnished &amp; move-in ready</span>
+          <div class="af">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Move-in ready
           </div>
-          <div class="about-feature">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Free high-speed Wi-Fi</span>
+          <div class="af">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Free high-speed Wi-Fi
           </div>
-          <div class="about-feature">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Flexible tailor-made plans</span>
+          <div class="af">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Flexible lease terms
           </div>
-          <div class="about-feature">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Experienced, skilled personnel</span>
+          <div class="af">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Experienced support staff
           </div>
-          <div class="about-feature">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Complimentary parking</span>
+          <div class="af">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Complimentary parking
           </div>
-          <div class="about-feature">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>1 hour from Tampa, 30 min from Orlando</span>
+          <div class="af">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            30 min from Orlando
           </div>
-        </div>
-      </div>
-      <div class="about-visual">
-        <div class="about-card about-card-1">
-          <div class="about-card-icon">&#9733;</div>
-          <p><strong>World-Class</strong><br>service standards</p>
-        </div>
-        <div class="about-card about-card-2">
-          <div class="about-card-icon">&#9878;</div>
-          <p><strong>South Lake County</strong><br>premier offices</p>
-        </div>
-        <div class="about-image-placeholder" style="background-image: url('images/office-1.svg'); background-size: cover; background-position: center;">
-          <span>Professional Office Space</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why CPEO Section -->
-  <section class="why-cpeo" id="why-cpeo">
+  <!-- FAQ -->
+  <section class="section section-muted" id="faq">
+    <div class="container container-sm">
+      <div class="section-head">
+        <p class="label">FAQ</p>
+        <h2>Common questions.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Who uses CPEO?</summary>
+          <p>Entrepreneurs, startups, consultants, attorneys, remote workers, and growing companies that need a professional presence without a traditional lease.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What are your hours?</summary>
+          <p>Monday through Friday, 9:00 AM to 5:00 PM EST. Executive office tenants have extended access to their private offices.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I rent by the hour?</summary>
+          <p>Yes. Conference rooms are available hourly, day offices by the day, and executive offices on monthly terms. We create plans tailored to your needs.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need to schedule a room in advance?</summary>
+          <p>We recommend booking in advance for boardrooms. Call 352-404-5955 or use the contact form to reserve your space.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can you answer my phone calls?</summary>
+          <p>Yes. Our receptionists provide personalized call answering with access to your company profile and custom greeting instructions.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I use your mailing address?</summary>
+          <p>Yes. We're a registered Commercial Mail Receiving Agency (CMRA) offering mail collection, forwarding, and package receiving.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
     <div class="container">
-      <span class="section-badge">Why Choose Us</span>
-      <h2 class="section-title">Why Choose CPEO?</h2>
-      <p class="section-subtitle">We offer tailor-made plans to suit the specific needs of your company now and in the future, accommodating various company sizes and budgets.</p>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-number">01</div>
-          <h3>Professional Image</h3>
-          <p>A prestigious Clermont business address, professional reception, and polished office environment that elevates your brand from day one.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">02</div>
-          <h3>Cost Effective</h3>
-          <p>Get many services and amenities for a fraction of the cost of traditional office space. No long-term leases, no hidden fees, no maintenance worries.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">03</div>
-          <h3>Total Flexibility</h3>
-          <p>Rent by the hour, day, or month. Scale up or down as your business needs change. We handle the day-to-day running of the office.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">04</div>
-          <h3>State-of-the-Art Technology</h3>
-          <p>Access modern equipment and technologies with administrative support at a fraction of the cost of buying and maintaining your own.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">05</div>
-          <h3>Expert Staff</h3>
-          <p>Experienced and skilled personnel committed to high standards of customer service. Administrative staff trained in presentations and business communications.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">06</div>
-          <h3>Prime Location</h3>
-          <p>Conveniently located among the rolling hills of Clermont, just an hour from Tampa and 30 minutes from Orlando, with complimentary parking.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <span class="section-badge">What People Say</span>
-      <h2 class="section-title">Trusted by Local Businesses</h2>
-      <div class="testimonials-grid">
-        <div class="testimonial-card featured">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>"CPEO has helped me grow my business in a short amount of time. Thank you to Scott (and all the staff at CPEO) for helping me create a more prestigious image for my company."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MJ</div>
-            <div>
-              <strong>Mikel Jorgensen</strong>
-              <span>Owner, Chess Club Media, LLC</span>
+      <div class="contact-layout">
+        <div class="contact-text">
+          <p class="label">Contact</p>
+          <h2>Let's find your<br><em>perfect space.</em></h2>
+          <p>Schedule a tour, request a quote, or just ask a question. No pressure, no obligation.</p>
+          <div class="contact-details">
+            <a href="tel:3524045955" class="cd">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <span>352-404-5955</span>
+            </a>
+            <a href="tel:8884049634" class="cd">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <span>888-404-9634 (toll free)</span>
+            </a>
+            <a href="mailto:[email protected]" class="cd">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+              <span>[email protected]</span>
+            </a>
+            <div class="cd">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>1230 Oakley Seaver Dr, Suite 101<br>Clermont, FL 34711</span>
             </div>
           </div>
         </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>"The virtual office service is perfect for my consulting firm. I get a great address, mail handling, and meeting rooms when I need them — all without the overhead of a full-time lease."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">SM</div>
-            <div>
-              <strong>Sarah M.</strong>
-              <span>Consultant</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>"Everything was ready from day one — internet, furniture, phones, reception. We just showed up and started working. The conference rooms are excellent for client meetings."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">DL</div>
-            <div>
-              <strong>David L.</strong>
-              <span>Attorney</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <span class="section-badge">Common Questions</span>
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <div class="faq-grid">
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Why choose Clermont Professional Executive Offices?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>CPEO provides turnkey work environments with a concierge level of service. You get a professional image, flexible terms, state-of-the-art technology, and experienced support staff — all at a fraction of the cost of traditional office space.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Who uses Clermont Professional Executive Offices?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Entrepreneurs, startups, small companies looking to expand, consultants, attorneys, remote workers, and anyone who needs a professional office presence without the commitment of a traditional lease.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>What are your hours of operation?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Our offices are staffed Monday through Friday, 9:00 AM to 5:00 PM EST. Executive office tenants have extended access to their private offices.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>How big are the conference rooms?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>We have individual meeting rooms, training rooms, and conference boardrooms that can accommodate groups of up to 16 persons. Each is equipped with presentation equipment and high-speed internet.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Do you rent by the hour, day, or month?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Yes! We offer flexible rental terms — conference rooms are available by the hour, day offices by the day, and executive offices on monthly terms. We create tailor-made plans to suit your specific needs.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Do I have to schedule a room or can I just show up?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>We recommend scheduling in advance to ensure availability, especially for our boardrooms. Contact us at 352-404-5955 or use our online form to reserve your space.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Can you answer my phone calls for me?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Absolutely. Our professional receptionists provide personalized call answering with instant access to your company profile and special greeting instructions. This service is included in many of our packages or available as an add-on.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Can I use your mailing address?</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Yes. As a registered Commercial Mail Receiving Agency (CMRA), we provide a prestigious Clermont business address with mail collection, forwarding, and package receiving services.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta">
-    <div class="container cta-content">
-      <h2>Your New Office is Waiting for You</h2>
-      <p>Call for a personalized information package, at no obligation. Whether you need an executive office, virtual address, or conference room — we'd love to help.</p>
-      <div class="cta-actions">
-        <a href="tel:3524045955" class="btn btn-primary btn-lg">Call 352-404-5955</a>
-        <a href="tel:8884049634" class="btn btn-white btn-lg">Toll Free: 888-404-9634</a>
-        <a href="#contact" class="btn btn-outline btn-lg">Send a Message</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-info">
-        <span class="section-badge">Get In Touch</span>
-        <h2 class="section-title">Let's Talk About<br>Your Needs</h2>
-        <p>Whether you need a private office, virtual address, or a meeting room for the afternoon — we'd love to help. Request a personalized information package at no obligation.</p>
-        <div class="contact-details">
-          <div class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div>
-              <strong>Address</strong>
-              <p>1230 Oakley Seaver Drive, Suite 101<br>Clermont, FL 34711</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div>
-              <strong>Phone</strong>
-              <p><a href="tel:3524045955">352-404-5955</a><br><a href="tel:8884049634">888-404-9634 (Toll Free)</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
-            <div>
-              <strong>Email</strong>
-              <p><a href="mailto:[email protected]">[email protected]</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            <div>
-              <strong>Hours</strong>
-              <p>Monday &ndash; Friday<br>9:00 AM &ndash; 5:00 PM EST</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="contact-form-wrapper">
         <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="John Doe" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="[email protected]" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="(352) 555-0123">
-          </div>
-          <div class="form-group">
-            <label for="service">Service Interested In</label>
-            <select id="service" name="service">
-              <option value="">Select a service</option>
-              <option value="executive-office">Executive Office</option>
-              <option value="virtual-office">Virtual Office</option>
-              <option value="virtual-receptionist">Reception Services</option>
-              <option value="mailing-address">Mailing Address</option>
-              <option value="conference-room">Conference / Meeting Room</option>
-              <option value="day-office">Day Office</option>
-              <option value="secretarial">Secretarial Support</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us about your needs..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-full">Request Information Package</button>
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone (optional)">
+          <select name="service">
+            <option value="">Interested in...</option>
+            <option>Executive Office</option>
+            <option>Virtual Office</option>
+            <option>Meeting Room</option>
+            <option>Reception Services</option>
+            <option>Mailing Address</option>
+            <option>Other</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Tell us about your needs"></textarea>
+          <button type="submit" class="btn btn-primary btn-full">Send message</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- Map Section -->
-  <section class="map">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5!2d-81.7729!3d28.5494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e78f2c0b5a6f7d%3A0x0!2s1230+Oakley+Seaver+Dr+Clermont+FL+34711!5e0!3m2!1sen!2sus!4v1"
-      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade" title="CPEO Location Map"></iframe>
-  </section>
+  <!-- Map -->
+  <div class="map-wrap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5!2d-81.7729!3d28.5494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e78f2c0b5a6f7d%3A0x0!2s1230+Oakley+Seaver+Dr+Clermont+FL+34711!5e0!3m2!1sen!2sus!4v1" width="100%" height="360" style="border:0;display:block;" allowfullscreen loading="lazy" title="CPEO Location"></iframe>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#" class="logo"><span class="logo-icon">&#9670;</span> CPEO</a>
-        <p>Clermont Professional Executive Offices — turnkey work environments and professional business solutions serving South Lake County, Florida.</p>
-        <div class="social-links">
-          <a href="https://www.facebook.com/pages/Clermont-FL/Clermont-Professional-Executive-Offices/149229545088888" aria-label="Facebook" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="https://www.twitter.com/cpeo_biz" aria-label="Twitter" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-          </a>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">CPEO</a>
+          <p>Executive offices &amp; business solutions in Clermont, FL.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/pages/Clermont-FL/Clermont-Professional-Executive-Offices/149229545088888" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://www.twitter.com/cpeo_biz" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">Executive Offices</a>
+          <a href="#services">Virtual Offices</a>
+          <a href="#services">Meeting Rooms</a>
+          <a href="#services">Reception</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#spaces">Spaces</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:3524045955">352-404-5955</a>
+          <a href="mailto:[email protected]">[email protected]</a>
+          <span>Mon&ndash;Fri 9am&ndash;5pm EST</span>
         </div>
       </div>
-      <div class="footer-links">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#executive-offices">Executive Offices</a></li>
-          <li><a href="#virtual-offices">Virtual Offices</a></li>
-          <li><a href="#reception-services">Reception Services</a></li>
-          <li><a href="#mailing-address">Mailing Address</a></li>
-          <li><a href="#conference-rooms">Conference Rooms</a></li>
-          <li><a href="#additional-services">Secretarial Support</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Clermont Professional, LLC</span>
       </div>
-      <div class="footer-links">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#why-cpeo">Why Choose CPEO?</a></li>
-          <li><a href="#facilities">Facilities</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:3524045955">352-404-5955</a></li>
-          <li><a href="tel:8884049634">888-404-9634</a></li>
-          <li><a href="mailto:[email protected]">[email protected]</a></li>
-          <li>1230 Oakley Seaver Dr<br>Suite 101</li>
-          <li>Clermont, FL 34711</li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; 2026 Clermont Professional, LLC. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Mobile Sticky CTA Bar -->
-  <div class="mobile-cta-bar" id="mobileCta">
-    <a href="tel:3524045955" class="mobile-cta-btn mobile-cta-call">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      Call Now
-    </a>
-    <a href="#contact" class="mobile-cta-btn mobile-cta-book">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-      Book a Room
-    </a>
+  <!-- Mobile CTA -->
+  <div class="mobile-bar" id="mobileBar">
+    <a href="tel:3524045955" class="mobile-bar-btn mb-call">Call</a>
+    <a href="#contact" class="mobile-bar-btn mb-book">Book a Tour</a>
   </div>
 
   <script src="script.js"></script>

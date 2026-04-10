@@ -1,121 +1,74 @@
-// Register Service Worker (PWA)
+// PWA
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('sw.js').catch(() => {});
   });
 }
 
-// Navbar scroll effect
-const navbar = document.getElementById('navbar');
+// Nav scroll
+const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+// Mobile menu
+const toggle = document.getElementById('navToggle');
+const menu = document.getElementById('mobileMenu');
+
+toggle.addEventListener('click', () => {
+  toggle.classList.toggle('active');
+  menu.classList.toggle('active');
+  document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
 });
 
-// Mobile nav toggle
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
-
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  navToggle.classList.toggle('active');
-});
-
-// Close mobile nav on link click
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-    navToggle.classList.remove('active');
+menu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    toggle.classList.remove('active');
+    menu.classList.remove('active');
+    document.body.style.overflow = '';
   });
 });
 
-// Close mobile nav on outside click
-document.addEventListener('click', (e) => {
-  if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
-    navLinks.classList.remove('active');
-  }
-});
-
-// Mobile sticky CTA bar - show after scrolling past hero
-const mobileCta = document.getElementById('mobileCta');
-if (mobileCta) {
+// Mobile bar — show after scrolling past hero
+const mobileBar = document.getElementById('mobileBar');
+if (mobileBar) {
   const hero = document.querySelector('.hero');
-  const ctaObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      mobileCta.style.transform = entry.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
-    });
-  }, { threshold: 0.1 });
-  mobileCta.style.transition = 'transform 0.3s ease';
-  mobileCta.style.transform = 'translateY(100%)';
-  if (hero) ctaObserver.observe(hero);
+  if (hero) {
+    const obs = new IntersectionObserver(([e]) => {
+      mobileBar.style.transform = e.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
+    }, { threshold: 0.05 });
+    obs.observe(hero);
+  }
 }
 
-// FAQ Accordion
-document.querySelectorAll('.faq-question').forEach(button => {
-  button.addEventListener('click', () => {
-    const item = button.parentElement;
-    const isActive = item.classList.contains('active');
-
-    // Close all FAQ items
-    document.querySelectorAll('.faq-item').forEach(faq => {
-      faq.classList.remove('active');
-      faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-    });
-
-    // Open clicked one if it wasn't already open
-    if (!isActive) {
-      item.classList.add('active');
-      button.setAttribute('aria-expanded', 'true');
+// Scroll reveal
+const reveals = document.querySelectorAll('.svc, .price-card, .gallery-item, .af, .faq-item, .metric');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 60);
+      revealObs.unobserve(e.target);
     }
   });
-});
+}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+reveals.forEach(el => { el.classList.add('reveal'); revealObs.observe(el); });
 
-// Scroll animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -40px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('animate-in');
-      observer.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
-
-document.querySelectorAll(
-  '.service-detail, .space-card, .testimonial-card, .about-feature, .contact-item, .why-card, .faq-item, .room-type, .pricing-card, .gallery-item, .trust-logo'
-).forEach(el => {
-  observer.observe(el);
-});
-
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
+// Contact form
+document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
-
-  const btn = contactForm.querySelector('button[type="submit"]');
-  const originalText = btn.textContent;
-  btn.textContent = 'Message Sent!';
-  btn.style.background = '#059669';
+  const btn = e.target.querySelector('button');
+  const orig = btn.textContent;
+  btn.textContent = 'Sent!';
+  btn.style.background = '#22c55e';
   btn.disabled = true;
-
-  setTimeout(() => {
-    btn.textContent = originalText;
-    btn.style.background = '';
-    btn.disabled = false;
-    contactForm.reset();
-  }, 3000);
+  setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.disabled = false; e.target.reset(); }, 2500);
 });
 
-// Smooth scroll for anchor links (works with mobile CTA bar too)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth' });
   });
 });
