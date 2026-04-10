@@ -64,7 +64,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 document.querySelectorAll(
-  '.service-detail, .space-card, .testimonial-card, .about-feature, .contact-item, .why-card, .faq-item, .room-type'
+  '.service-detail, .space-card, .testimonial-card, .about-feature, .contact-item, .why-card, .faq-item, .room-type, .pricing-card, .gallery-item, .trust-logo'
 ).forEach(el => {
   observer.observe(el);
 });

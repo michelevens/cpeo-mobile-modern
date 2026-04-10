@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1a3055"/>
+    </linearGradient>
+    <linearGradient id="tableG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a4a70"/>
+      <stop offset="100%" stop-color="#1a3660"/>
+    </linearGradient>
+    <linearGradient id="screenG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a56db" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgG)"/>
+  <!-- Floor -->
+  <polygon points="100,380 700,380 800,600 0,600" fill="#0f172a" opacity="0.6"/>
+  <line x1="100" y1="380" x2="700" y2="380" stroke="#0ea5e9" stroke-width="1" opacity="0.15"/>
+  <!-- Back wall -->
+  <rect x="100" y="80" width="600" height="300" fill="#12203a" opacity="0.4"/>
+  <!-- Wall trim -->
+  <line x1="100" y1="80" x2="100" y2="380" stroke="#0ea5e9" stroke-width="0.5" opacity="0.15"/>
+  <line x1="700" y1="80" x2="700" y2="380" stroke="#0ea5e9" stroke-width="0.5" opacity="0.15"/>
+  <!-- Presentation screen -->
+  <rect x="300" y="100" width="200" height="130" rx="3" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.5" opacity="0.7"/>
+  <rect x="308" y="108" width="184" height="114" rx="2" fill="url(#screenG)"/>
+  <!-- Screen content hint (chart) -->
+  <rect x="325" y="170" width="20" height="40" fill="#0ea5e9" opacity="0.2" rx="1"/>
+  <rect x="355" y="150" width="20" height="60" fill="#1a56db" opacity="0.3" rx="1"/>
+  <rect x="385" y="160" width="20" height="50" fill="#0ea5e9" opacity="0.2" rx="1"/>
+  <rect x="415" y="135" width="20" height="75" fill="#1a56db" opacity="0.3" rx="1"/>
+  <rect x="445" y="145" width="20" height="65" fill="#0ea5e9" opacity="0.2" rx="1"/>
+  <!-- Conference table (perspective) -->
+  <polygon points="250,340 550,340 580,450 220,450" fill="url(#tableG)" stroke="#0ea5e9" stroke-width="0.8" opacity="0.7"/>
+  <!-- Table surface shine -->
+  <polygon points="260,345 540,345 565,440 230,440" fill="#0ea5e9" opacity="0.03"/>
+  <!-- Table legs -->
+  <line x1="250" y1="450" x2="230" y2="500" stroke="#1a3055" stroke-width="4"/>
+  <line x1="550" y1="450" x2="570" y2="500" stroke="#1a3055" stroke-width="4"/>
+  <!-- Chairs - left side -->
+  <rect x="180" y="355" width="40" height="35" rx="6" fill="#1a56db" opacity="0.25" stroke="#0ea5e9" stroke-width="0.5" opacity="0.3"/>
+  <rect x="170" y="400" width="40" height="35" rx="6" fill="#1a56db" opacity="0.25" stroke="#0ea5e9" stroke-width="0.5" opacity="0.3"/>
+  <rect x="155" y="445" width="40" height="35" rx="6" fill="#1a56db" opacity="0.2" stroke="#0ea5e9" stroke-width="0.5" opacity="0.25"/>
+  <!-- Chairs - right side -->
+  <rect x="580" y="355" width="40" height="35" rx="6" fill="#1a56db" opacity="0.25" stroke="#0ea5e9" stroke-width="0.5" opacity="0.3"/>
+  <rect x="590" y="400" width="40" height="35" rx="6" fill="#1a56db" opacity="0.25" stroke="#0ea5e9" stroke-width="0.5" opacity="0.3"/>
+  <rect x="605" y="445" width="40" height="35" rx="6" fill="#1a56db" opacity="0.2" stroke="#0ea5e9" stroke-width="0.5" opacity="0.25"/>
+  <!-- Chair at head of table -->
+  <rect x="380" y="460" width="40" height="35" rx="6" fill="#1a56db" opacity="0.2" stroke="#0ea5e9" stroke-width="0.5" opacity="0.25"/>
+  <!-- Chair at foot of table -->
+  <rect x="380" y="300" width="40" height="30" rx="6" fill="#1a56db" opacity="0.25" stroke="#0ea5e9" stroke-width="0.5" opacity="0.3"/>
+  <!-- Ceiling light -->
+  <ellipse cx="400" cy="60" rx="80" ry="8" fill="#0ea5e9" opacity="0.15"/>
+  <rect x="370" y="55" width="60" height="6" rx="2" fill="#e8eefb" opacity="0.15"/>
+  <!-- Light glow on table -->
+  <ellipse cx="400" cy="390" rx="120" ry="30" fill="#0ea5e9" opacity="0.04"/>
+  <!-- Whiteboard on side wall -->
+  <rect x="120" y="140" width="80" height="60" rx="2" fill="#e8eefb" opacity="0.08" stroke="#0ea5e9" stroke-width="0.5" opacity="0.2"/>
+  <!-- Label -->
+  <text x="400" y="555" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#e8eefb" opacity="0.5" letter-spacing="6">CONFERENCE ROOM</text>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0ea5e9" opacity="0.35" letter-spacing="3">PLACEHOLDER IMAGE</text>
+</svg>

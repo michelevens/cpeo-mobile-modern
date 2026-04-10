@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1a3055"/>
+    </linearGradient>
+    <linearGradient id="deskR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a4a70"/>
+      <stop offset="100%" stop-color="#1a3660"/>
+    </linearGradient>
+    <linearGradient id="deskFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3660"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="spotR" cx="0.5" cy="0.3" r="0.6">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgR)"/>
+  <!-- Ambient light -->
+  <rect width="800" height="600" fill="url(#spotR)"/>
+  <!-- Floor -->
+  <rect x="0" y="420" width="800" height="180" fill="#0f172a" opacity="0.6"/>
+  <line x1="0" y1="420" x2="800" y2="420" stroke="#0ea5e9" stroke-width="1" opacity="0.12"/>
+  <!-- Back wall panel -->
+  <rect x="200" y="80" width="400" height="340" fill="#12203a" opacity="0.3"/>
+  <!-- Company logo placeholder on wall -->
+  <circle cx="400" cy="180" r="50" fill="none" stroke="#0ea5e9" stroke-width="2" opacity="0.25"/>
+  <circle cx="400" cy="180" r="35" fill="none" stroke="#0ea5e9" stroke-width="1" opacity="0.15"/>
+  <text x="400" y="188" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#0ea5e9" opacity="0.3" font-weight="bold">LOGO</text>
+  <!-- Reception desk - top -->
+  <polygon points="200,360 600,360 620,380 180,380" fill="url(#deskR)" stroke="#0ea5e9" stroke-width="0.8" opacity="0.7"/>
+  <!-- Reception desk - front panel -->
+  <polygon points="180,380 620,380 620,440 180,440" fill="url(#deskFront)" stroke="#0ea5e9" stroke-width="0.5" opacity="0.5"/>
+  <!-- Desk accent strip -->
+  <rect x="185" y="400" width="430" height="3" fill="#0ea5e9" opacity="0.2" rx="1"/>
+  <!-- Monitor on desk -->
+  <rect x="340" y="310" width="70" height="50" rx="3" fill="#0f172a" stroke="#0ea5e9" stroke-width="1" opacity="0.7"/>
+  <rect x="345" y="315" width="60" height="40" rx="2" fill="#1a56db" opacity="0.15"/>
+  <rect x="370" y="358" width="12" height="5" fill="#1a3055"/>
+  <!-- Phone -->
+  <rect x="450" y="345" width="30" height="18" rx="2" fill="#1a3055" stroke="#0ea5e9" stroke-width="0.5" opacity="0.5"/>
+  <!-- Waiting chairs - left -->
+  <rect x="50" y="400" width="50" height="40" rx="5" fill="#1a56db" opacity="0.2" stroke="#0ea5e9" stroke-width="0.5" opacity="0.25"/>
+  <rect x="50" y="380" width="50" height="25" rx="5" fill="#1a56db" opacity="0.15"/>
+  <!-- Waiting chairs - right (sofa) -->
+  <rect x="660" y="380" width="100" height="50" rx="8" fill="#1a56db" opacity="0.2" stroke="#0ea5e9" stroke-width="0.5" opacity="0.25"/>
+  <rect x="655" y="370" width="30" height="60" rx="6" fill="#1a56db" opacity="0.18"/>
+  <rect x="735" y="370" width="30" height="60" rx="6" fill="#1a56db" opacity="0.18"/>
+  <!-- Coffee table -->
+  <rect x="670" y="445" width="80" height="8" rx="2" fill="#2a4a70" opacity="0.5"/>
+  <rect x="685" y="453" width="10" height="15" fill="#1a3055" rx="1"/>
+  <rect x="745" y="453" width="10" height="15" fill="#1a3055" rx="1"/>
+  <!-- Plant left -->
+  <rect x="160" y="350" width="10" height="70" fill="#1a3055" rx="2"/>
+  <circle cx="165" cy="340" r="22" fill="#0ea5e9" opacity="0.1"/>
+  <circle cx="155" cy="330" r="16" fill="#0ea5e9" opacity="0.08"/>
+  <!-- Ceiling lights -->
+  <rect x="250" y="50" width="100" height="4" rx="2" fill="#e8eefb" opacity="0.12"/>
+  <rect x="450" y="50" width="100" height="4" rx="2" fill="#e8eefb" opacity="0.12"/>
+  <!-- Floor tiles hint -->
+  <g stroke="#0ea5e9" stroke-width="0.3" opacity="0.06">
+    <line x1="0" y1="460" x2="800" y2="460"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="0" y1="540" x2="800" y2="540"/>
+    <line x1="200" y1="420" x2="200" y2="600"/>
+    <line x1="400" y1="420" x2="400" y2="600"/>
+    <line x1="600" y1="420" x2="600" y2="600"/>
+  </g>
+  <!-- Label -->
+  <text x="400" y="555" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#e8eefb" opacity="0.5" letter-spacing="6">RECEPTION AREA</text>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0ea5e9" opacity="0.35" letter-spacing="3">PLACEHOLDER IMAGE</text>
+</svg>
