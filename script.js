@@ -28,6 +28,26 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const item = button.parentElement;
+    const isActive = item.classList.contains('active');
+
+    // Close all FAQ items
+    document.querySelectorAll('.faq-item').forEach(faq => {
+      faq.classList.remove('active');
+      faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+
+    // Open clicked one if it wasn't already open
+    if (!isActive) {
+      item.classList.add('active');
+      button.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
 // Scroll animations
 const observerOptions = {
   threshold: 0.1,
@@ -43,7 +63,9 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.service-card, .space-card, .testimonial-card, .about-feature, .contact-item').forEach(el => {
+document.querySelectorAll(
+  '.service-detail, .space-card, .testimonial-card, .about-feature, .contact-item, .why-card, .faq-item, .room-type'
+).forEach(el => {
   observer.observe(el);
 });
 
@@ -52,10 +74,6 @@ const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const formData = new FormData(contactForm);
-  const data = Object.fromEntries(formData.entries());
-
-  // Show success message
   const btn = contactForm.querySelector('button[type="submit"]');
   const originalText = btn.textContent;
   btn.textContent = 'Message Sent!';
