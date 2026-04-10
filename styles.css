@@ -1550,8 +1550,27 @@ img {
     grid-template-columns: 1fr;
   }
 
+  /* Mobile CTA bar */
+  .mobile-cta-bar {
+    display: flex;
+  }
+
+  /* Extra bottom padding for sticky CTA */
+  .footer {
+    padding-bottom: 80px;
+  }
+
   .trust-logos {
-    gap: 24px;
+    gap: 20px;
+  }
+
+  .trust-logo svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .trust-logo span {
+    font-size: 0.65rem;
   }
 
   .amenity-list {
@@ -1575,6 +1594,95 @@ img {
     max-width: 100%;
   }
 
+  /* Touch-friendly sizing */
+  .btn {
+    min-height: 48px;
+    padding: 14px 24px;
+  }
+
+  .btn-lg {
+    padding: 16px 28px;
+    font-size: 1rem;
+  }
+
+  /* Sections - tighter mobile padding */
+  .services,
+  .facilities,
+  .about,
+  .why-cpeo,
+  .testimonials,
+  .faq,
+  .pricing,
+  .gallery,
+  .contact {
+    padding: 64px 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Mobile hero adjustments */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Pricing mobile */
+  .pricing-grid {
+    max-width: 100%;
+  }
+
+  .pricing-featured {
+    padding: 36px 24px;
+  }
+
+  .price-amount {
+    font-size: 2.5rem;
+  }
+
+  /* FAQ touch-friendly */
+  .faq-question {
+    padding: 18px 20px;
+    min-height: 56px;
+  }
+
+  /* Contact form touch */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 14px 16px;
+    font-size: 16px; /* prevents iOS zoom */
+  }
+
+  .contact-form-wrapper {
+    padding: 24px;
+  }
+
+  /* Smoother scrolling on mobile */
+  html {
+    scroll-padding-top: 70px;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .room-types-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1591,6 +1699,56 @@ img {
     flex-direction: column;
     gap: 12px;
   }
+}
+
+/* ===== MOBILE STICKY CTA BAR ===== */
+.mobile-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: var(--white);
+  border-top: 1px solid var(--gray-100);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+  padding: 10px 16px;
+  gap: 10px;
+  padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+}
+
+.mobile-cta-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--transition);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-cta-call {
+  background: var(--white);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.mobile-cta-book {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.mobile-cta-call:active {
+  background: var(--primary-light);
+}
+
+.mobile-cta-book:active {
+  background: var(--primary-dark);
 }
 
 /* ===== ANIMATIONS ===== */

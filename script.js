@@ -1,3 +1,10 @@
+// Register Service Worker (PWA)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -27,6 +34,20 @@ document.addEventListener('click', (e) => {
     navLinks.classList.remove('active');
   }
 });
+
+// Mobile sticky CTA bar - show after scrolling past hero
+const mobileCta = document.getElementById('mobileCta');
+if (mobileCta) {
+  const hero = document.querySelector('.hero');
+  const ctaObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      mobileCta.style.transform = entry.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
+    });
+  }, { threshold: 0.1 });
+  mobileCta.style.transition = 'transform 0.3s ease';
+  mobileCta.style.transform = 'translateY(100%)';
+  if (hero) ctaObserver.observe(hero);
+}
 
 // FAQ Accordion
 document.querySelectorAll('.faq-question').forEach(button => {
@@ -88,7 +109,7 @@ contactForm.addEventListener('submit', (e) => {
   }, 3000);
 });
 
-// Smooth scroll for anchor links
+// Smooth scroll for anchor links (works with mobile CTA bar too)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
